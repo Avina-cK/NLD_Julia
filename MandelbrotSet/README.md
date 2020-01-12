@@ -16,6 +16,6 @@ centre 	=	a₀+im*b₀      # centre of frame
 e 	=	2.0               # radius around centre
 ```
 Change a₀, b₀ and e to choose the required frame of the Mandelbrot set you would like to render. 
-An example would be the following image, centred around (0.25-0.5im). 
+An example would be the following image, centred around 0.25-0.5im; from the zoom sequence in <a href=https://github.com/Avina-cK/NLD_Julia/tree/master/MandelbrotSet/Zoom4_around_0_25__0_5> this file </a>. 
 <img src=https://raw.githubusercontent.com/Avina-cK/NLD_Julia/master/MandelbrotSet/Zoom4_around_0_25__0_5/Zoom2.JPG >
 One has to be careful to change the maximum number of iterations `n_iter` to maintain the accuracy of the set in the frame. 
