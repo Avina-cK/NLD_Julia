@@ -7,9 +7,9 @@ M = zeros(D,D)			#creating a zero matrix of dimensions D × D
 M = OffsetArray(M, -N:N, -N:N)	#changing the indices of the matrix to be -N to N rows × -N to N columns
 n_iter =80			#no. of iterations that map is made to go through
 
-centre = a₀+im*b₀
-a₀ 	=	real(centre)
-b₀ 	=	imag(centre)
+a₀ 	=	0.0
+b₀ 	=	0.0
+centre 	=	a₀+im*b₀	#centre of frame
 e 	=	2		#radius around centre
 
 for i in -N:N
