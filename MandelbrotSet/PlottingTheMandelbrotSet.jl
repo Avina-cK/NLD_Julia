@@ -3,14 +3,14 @@ using OffsetArrays, LinearAlgebra, Images, ImageView
 f(x, c)=x^2 +c
 N=1000
 D= 2*N +1
-M = zeros(D,D)
-M = OffsetArray(M, -N:N, -N:N)
-n_iter =80
+M = zeros(D,D)			#creating a zero matrix of dimensions D × D
+M = OffsetArray(M, -N:N, -N:N)	#changing the indices of the matrix to be -N to N rows × -N to N columns
+n_iter =80			#no. of iterations that map is made to go through
 
-a₀ 	=	0
-b₀ 	=	0
-e 	=	2
 centre = a₀+im*b₀
+a₀ 	=	real(centre)
+b₀ 	=	imag(centre)
+e 	=	2		#radius around centre
 
 for i in -N:N
     for j in -N:N
