@@ -1,10 +1,12 @@
 using OffsetArrays, LinearAlgebra, Plots
 d = 2.0
-k=1
+k=0
 
-while k<50
-	global d=2+(k/10)
+for k in 0.0:0.05:5.0
+	global d= 2.0 + k
 	f(x, c)=x^(d) +c
+	title= "d=" * string(d)
+
 	N=800
 	D= 2*N +1
 	M = zeros(D,D)
@@ -35,11 +37,11 @@ while k<50
     	     end
 		print("|")
 	end
-	colorgrad=cgrad([:yellow, :maroon1, :navy])
-	Plots.heatmap(transpose(M), 	aspectratio=1,color=:sand_grad, grid=false, 	showaxis=false, size=(1000,1000), legend=false)
-
-	filename="C://Users/Avina Kalle/Documents/03_Honours/JuliaSets_and_MandelbrotSet/ZeColors/MultibrotSets/Multibrot_"* string(Int8(floor(d))) *"-" *string(Int8(floor((d-Int8(floor(d)))*10))) *".png"
+	
+	Plots.heatmap(transpose(M), aspectratio=1,color=:sand_grad, grid=false, showaxis=false,title=title, size=(900,900), legend=false)
+	
+	filename="C://Users/UserName/Documents/Multibrot_"*"-" *string(d) *".png"
 	savefig(filename)
+	print(k)
 
-	global k=k+1
 end
