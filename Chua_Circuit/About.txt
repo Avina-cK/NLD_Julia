@@ -1,0 +1,5 @@
+ChuaCircuit.asc
+  This is an LTspice schematic which simulates the Chua circuit in the software: LTspice XVII
+
+ChuaCircuit_BifurcationDiagram.jl
+  This script written in the language Julia-1.1.1 plots the bifurcation diagram of the Chua circuit ODE.
