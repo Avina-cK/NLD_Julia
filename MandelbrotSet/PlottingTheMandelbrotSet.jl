@@ -34,4 +34,4 @@ for i in -N:N
 	print("|")
 end
 
-imshow(Gray.(transpose(M)))
+Plots.heatmap(transpose(M), aspectratio=1,color=:virids, grid=false, showaxis=false, size=(1300,1300), legend=false)
