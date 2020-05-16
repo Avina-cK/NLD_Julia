@@ -1,4 +1,8 @@
-using OffsetArrays, LinearAlgebra, Images, ImageView
+using OffsetArrays, LinearAlgebra,Plots
+#=
+# For black and white image
+using Images, ImageView
+=#
 
 f(x, c)=x^2 +c
 N=1000
@@ -35,3 +39,8 @@ for i in -N:N
 end
 
 Plots.heatmap(transpose(M), aspectratio=1,color=:virids, grid=false, showaxis=false, size=(1300,1300), legend=false)
+
+#=
+#For black and white image
+imshow(Gray.(transpose(M)))
+=#
