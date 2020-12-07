@@ -27,7 +27,7 @@ function Chua(du,u,p,t)
     du[3]=-p[2]*u[2]
 end
 
-ν=3     #parameter to plot in bifurcation plot
+ν=3     #variable to plot in bifurcation plot
 Rₓ=1900 #Final R
 
 while R<Rₓ
