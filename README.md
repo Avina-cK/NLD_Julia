@@ -1,5 +1,5 @@
 # NLD_Julia
-This project contains code for a few nonlinear dynamical systems analysed using Julia-1.1.1 for an Undergraduate year long project. The thesis itself shall be uploaded after July 24th.
+This folder contains code for a few nonlinear dynamical systems analysed using Julia-1.1.1; some of which was for an Undergraduate year long project. The thesis itself shall be uploaded after July 24th.
 Note: This is not a complete repository for all the code used for the project. 
 
 ## Chua Circuit
